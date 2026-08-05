@@ -9,7 +9,7 @@ export const profile = {
 Prior to my PhD, I completed my M.S. in Computer Science at COMSATS University Islamabad, Pakistan, with a CGPA of 3.71/4.00, and my B.S. (Honors) in Computer Science at the University of Sargodha, Pakistan, with a CGPA of 3.50/4.00. I worked as a Lecturer in Computer Science at Bahria Foundation College, Attock, Pakistan, where I taught Introduction to ICT, Programming Fundamentals, and Data Science Foundations.
 
 My research has been recognized with the BK21 FOUR Research Scholarship, the Best Paper Award at ADINTECH 2025, and the Excellent Research Performance Award from BK21 at Jeju National University. I am passionate about advancing energy-efficient AI systems and contributing to sustainable energy solutions.`,
-  photo: "/images/profile.jpg",
+  photo: "/images/profile.png",
   cvUrl: "/files/cv.pdf",
   office: "Machine Learning Laboratory, Jeju National University",
   address: "Jeju, Republic of Korea",
