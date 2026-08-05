@@ -66,7 +66,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${lora.variable} h-full antialiased`}
+      className={`${inter.variable} ${lora.variable} h-full antialiased bg-background`}
     >
       <head>
         <link
@@ -74,7 +74,7 @@ export default function RootLayout({
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-background text-text-primary font-sans">
+      <body className="min-h-full flex flex-col bg-transparent text-text-primary font-sans">
         {/* Beautiful Background Decoration */}
         <div className="background-decoration" aria-hidden="true">
           <div className="background-gradient" />
