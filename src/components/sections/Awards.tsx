@@ -10,7 +10,7 @@ export function Awards() {
   const [lightbox, setLightbox] = useState<{ images: string[]; title: string } | null>(null);
 
   return (
-    <section id="awards" className="py-16 lg:py-24 bg-surface/30">
+    <section id="awards" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeading title="Awards & Achievements" subtitle="Recognitions and honors" />
 

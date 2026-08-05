@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export function Skills() {
   return (
-    <section id="skills" className="py-16 lg:py-24 bg-surface/30">
+    <section id="skills" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeading title="Technical Skills" subtitle="Tools and expertise" />
 

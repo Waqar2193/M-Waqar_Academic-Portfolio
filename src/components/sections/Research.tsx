@@ -41,7 +41,7 @@ const researchInterests = [
 
 export function Research() {
   return (
-    <section id="research" className="py-16 lg:py-24 bg-surface/30">
+    <section id="research" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeading title="Research Interests" subtitle="Areas I am passionate about" />
 
