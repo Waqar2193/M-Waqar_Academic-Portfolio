@@ -16,7 +16,7 @@ export function News() {
       <div className="container">
         <SectionHeading title="News & Updates" subtitle="Recent activities and announcements" />
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-4xl mx-auto space-y-3">
           {sortedNews.map((item) => (
             <article
               key={item.id}

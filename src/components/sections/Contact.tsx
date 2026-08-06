@@ -18,7 +18,7 @@ const contactLinks = [
     name: "GitHub",
     href: contact.github,
     icon: "github",
-    text: "github.com/muhammad-waqar",
+    text: "github.com/Waqar2193",
   },
   {
     name: "Google Scholar",
@@ -54,7 +54,7 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-3">
             {contactLinks.map((link) => (
               <a
                 key={link.name}

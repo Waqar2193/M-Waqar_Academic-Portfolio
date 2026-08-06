@@ -45,7 +45,7 @@ export function Research() {
       <div className="container">
         <SectionHeading title="Research Interests" subtitle="Areas I am passionate about" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {researchInterests.map((interest) => (
             <article
               key={interest.title}

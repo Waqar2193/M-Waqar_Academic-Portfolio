@@ -8,7 +8,7 @@ export function Projects() {
       <div className="container">
         <SectionHeading title="Research Projects" subtitle="Ongoing and completed work" />
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
           {projects.map((project) => (
             <article
               key={project.id}

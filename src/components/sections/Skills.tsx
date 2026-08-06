@@ -8,7 +8,7 @@ export function Skills() {
       <div className="container">
         <SectionHeading title="Technical Skills" subtitle="Tools and expertise" />
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
           {skills.map((category) => (
             <article
               key={category.name}

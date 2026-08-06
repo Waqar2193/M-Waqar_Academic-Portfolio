@@ -14,7 +14,7 @@ export function Awards() {
       <div className="container">
         <SectionHeading title="Awards & Achievements" subtitle="Recognitions and honors" />
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-4xl mx-auto space-y-3">
           {awards.map((award) => (
             <article
               key={award.id}

@@ -8,7 +8,7 @@ export function Publications() {
       <div className="container">
         <SectionHeading title="Publications" subtitle="Selected research papers" />
 
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-4">
           {publications.map((pub, index) => (
             <article
               key={pub.id}

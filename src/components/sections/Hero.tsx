@@ -8,12 +8,12 @@ export function Hero() {
   return (
     <section id="hero" className="relative min-h-[80vh] flex items-center justify-center pt-20 pb-12 lg:pb-16 overflow-hidden">
       <div className="container relative z-10">
-        <div className="max-w-4xl mx-auto text-center px-4">
+        <div className="max-w-3xl mx-auto text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-6 lg:space-y-8"
+            className="space-y-4 lg:space-y-6"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -69,7 +69,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 lg:mt-12"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 lg:mt-8"
             >
               <a
                 href="#publications"
@@ -100,7 +100,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6, ease: "easeOut" }}
-              className="flex items-center justify-center gap-6 mt-10 lg:mt-14"
+              className="flex items-center justify-center gap-4 mt-6 lg:mt-8"
             >
               {Object.entries(profile.social).map(([key, url]) => (
                 <a

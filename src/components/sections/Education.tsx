@@ -9,7 +9,7 @@ export function Education() {
       <div className="container">
         <SectionHeading title="Education & Experience" subtitle="Academic and professional journey" />
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div>
             <h3 className="font-serif text-xl font-medium text-text-primary mb-6 flex items-center gap-3">
               <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

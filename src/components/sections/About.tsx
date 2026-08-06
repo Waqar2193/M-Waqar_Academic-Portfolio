@@ -12,7 +12,7 @@ export function About() {
               My journey in computer science began with a B.S. (Honors) from the University of Sargodha and an M.S. from COMSATS University Islamabad, where I ranked among the top students in both programs. Before starting my doctoral studies, I spent seven years as a Lecturer at Bahria Foundation College, Attock, where I taught programming fundamentals and data science courses while designing hands-on laboratory curricula. Today, I combine that teaching experience with my current research at the Machine Learning Laboratory, where I build forecasting models that help make electric vehicle charging infrastructure more efficient, cost-aware, and reliable. My work has been recognized through the BK21 FOUR Research Scholarship and the Best Paper Award at ADINTECH 2025, and I remain committed to advancing sustainable energy solutions through applied machine learning.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             <Card className="p-6 border-accent/20 hover:border-accent/40 transition-colors">
               <h3 className="font-serif text-lg font-medium text-text-primary mb-2">Current Research</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
