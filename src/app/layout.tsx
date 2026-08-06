@@ -82,6 +82,29 @@ export default function RootLayout({
           <div className="background-blob background-blob-1" />
           <div className="background-blob background-blob-2" />
           <div className="background-blob background-blob-3" />
+
+          {/* Neural Network Particle Field */}
+          <div className="background-particles" />
+
+          {/* Neural Network Connection Lines */}
+          <div className="background-connections">
+            <div className="background-connection" style={{ top: "15%", left: "20%", width: "200px", height: "1px", transform: "rotate(25deg)" }} />
+            <div className="background-connection" style={{ top: "40%", left: "30%", width: "180px", height: "1px", transform: "rotate(-15deg)" }} />
+            <div className="background-connection" style={{ top: "60%", left: "25%", width: "220px", height: "1px", transform: "rotate(35deg)" }} />
+            <div className="background-connection" style={{ top: "35%", left: "60%", width: "160px", height: "1px", transform: "rotate(-25deg)" }} />
+            <div className="background-connection" style={{ top: "70%", left: "55%", width: "190px", height: "1px", transform: "rotate(10deg)" }} />
+          </div>
+
+          {/* Time-Series Waveform */}
+          <div className="background-wave" />
+
+          {/* Floating Energy Particles */}
+          <div className="background-particle" style={{ top: "20%", left: "15%", width: "6px", height: "6px", animationDelay: "0s" }} />
+          <div className="background-particle" style={{ top: "35%", left: "70%", width: "4px", height: "4px", animationDelay: "2s" }} />
+          <div className="background-particle" style={{ top: "55%", left: "25%", width: "5px", height: "5px", animationDelay: "4s" }} />
+          <div className="background-particle" style={{ top: "75%", left: "80%", width: "3px", height: "3px", animationDelay: "6s" }} />
+          <div className="background-particle" style={{ top: "45%", left: "40%", width: "4px", height: "4px", animationDelay: "8s" }} />
+          <div className="background-particle" style={{ top: "15%", left: "65%", width: "5px", height: "5px", animationDelay: "1s" }} />
         </div>
 
         <ThemeProvider
