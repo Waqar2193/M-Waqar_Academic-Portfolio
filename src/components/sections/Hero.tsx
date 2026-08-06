@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 pb-16 lg:pb-24 overflow-hidden">
+    <section id="hero" className="relative min-h-[80vh] flex items-center justify-center pt-20 pb-12 lg:pb-16 overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center px-4">
           <motion.div

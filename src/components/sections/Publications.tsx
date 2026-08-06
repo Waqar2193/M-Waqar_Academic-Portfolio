@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/Badge";
 
 export function Publications() {
   return (
-    <section id="publications" className="py-16 lg:py-24">
+    <section id="publications" className="section">
       <div className="container">
         <SectionHeading title="Publications" subtitle="Selected research papers" />
 

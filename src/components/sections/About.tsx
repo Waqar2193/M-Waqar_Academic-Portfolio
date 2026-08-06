@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/Card";
 
 export function About() {
   return (
-    <section id="about" className="py-16 lg:py-24">
+    <section id="about" className="section">
       <div className="container">
         <SectionHeading title="About Me" subtitle="Get to know me better" />
         <div className="max-w-4xl mx-auto space-y-8">

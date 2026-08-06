@@ -12,7 +12,7 @@ export function News() {
   const sortedNews = [...news].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <section id="news" className="py-16 lg:py-24">
+    <section id="news" className="section">
       <div className="container">
         <SectionHeading title="News & Updates" subtitle="Recent activities and announcements" />
 

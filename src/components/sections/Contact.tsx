@@ -42,7 +42,7 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 lg:py-24">
+    <section id="contact" className="section">
       <div className="container">
         <SectionHeading title="Contact" subtitle="Let's get in touch" />
 

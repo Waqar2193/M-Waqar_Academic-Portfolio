@@ -5,7 +5,7 @@ import { Timeline, TimelineItem } from "@/components/ui/TimelineItem";
 
 export function Education() {
   return (
-    <section id="education" className="py-16 lg:py-24">
+    <section id="education" className="section">
       <div className="container">
         <SectionHeading title="Education & Experience" subtitle="Academic and professional journey" />
 

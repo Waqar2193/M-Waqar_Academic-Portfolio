@@ -15,7 +15,7 @@ My research has been recognized with the BK21 FOUR Research Scholarship, the Bes
   address: "Jeju, Republic of Korea",
   social: {
     linkedin: "http://www.linkedin.com/in/waqar2193/",
-    github: "https://github.com/muhammad-waqar",
+    github: "https://github.com/Waqar2193",
     googleScholar: "https://scholar.google.com/citations?user=fSifQmcAAAAJ&hl=en",
     orcid: "https://orcid.org/0009-0002-8413-2926",
     researchgate: "https://www.researchgate.net/profile/Muhammad-Waqar-73?ev=hdr_xprf",

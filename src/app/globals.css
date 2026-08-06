@@ -202,15 +202,15 @@
   }
 
   .section {
-    @apply py-16 sm:py-20 lg:py-24;
+    @apply py-10 sm:py-12 lg:py-14;
   }
 
   .section-heading {
-    @apply text-3xl sm:text-4xl font-serif font-medium text-text-primary mb-4;
+    @apply text-2xl sm:text-3xl font-serif font-medium text-text-primary mb-2;
   }
 
   .section-subheading {
-    @apply text-lg sm:text-xl text-text-secondary max-w-2xl;
+    @apply text-base sm:text-lg text-text-secondary max-w-2xl;
   }
 
   .btn,
