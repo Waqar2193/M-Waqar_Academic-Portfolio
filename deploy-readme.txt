@@ -18,7 +18,7 @@ STEP 1: CREATE A GITHUB REPOSITORY
 2. Sign in with your GitHub account
 3. Click the "+" icon in the top-right corner of the page
 4. Select "New repository" from the dropdown menu
-5. In the "Repository name" field, type:  academic-portfolio
+5. In the "Repository name" field, type:  M-Waqar_Academic-Portfolio
 6. Make sure "Public" is selected (this is required for the
    free Vercel plan)
 7. DO NOT check the box that says "Add a README file"
@@ -40,13 +40,9 @@ STEP 2: CONNECT YOUR PROJECT TO GITHUB
    - Right-click in the folder (empty area)
    - Select "Open in Terminal" (or "Git Bash Here")
 
-2. Type this command and press Enter (replace YOUR_USERNAME
-   with your actual GitHub username):
+2. Type this command and press Enter:
 
-   git remote add origin https://github.com/YOUR_USERNAME/academic-portfolio.git
-
-   Example: If your GitHub username is "waqar2193", type:
-   git remote add origin https://github.com/waqar2193/academic-portfolio.git
+   git remote add origin https://github.com/Waqar2193/M-Waqar_Academic-Portfolio.git
 
 3. Type this command and press Enter:
 
@@ -77,8 +73,8 @@ STEP 3: DEPLOY ON VERCEL
    (usually top-right corner)
 4. Select "Project" from the dropdown
 5. Vercel will show a list of your GitHub repositories.
-   Find "academic-portfolio" and click the "Import" button
-   next to it
+   Find "M-Waqar_Academic-Portfolio" and click the "Import"
+   button next to it
 6. Vercel will automatically detect that this is a Next.js
    project. You don't need to change any settings.
 7. Click the "Deploy" button
@@ -87,7 +83,7 @@ STEP 3: DEPLOY ON VERCEL
 9. When the build is complete, you'll see a success message
    with a green checkmark
 10. Your website is now LIVE at:
-    https://academic-portfolio.vercel.app
+    https://m-waqar-academic-portfolio.vercel.app
 
     Click the link to see your portfolio online!
 
@@ -97,7 +93,7 @@ STEP 4: CUSTOM DOMAIN (OPTIONAL)
 If you have your own domain (like muhammadwaqar.com):
 
 1. Go to your Vercel dashboard
-2. Click on your "academic-portfolio" project
+2. Click on your "M-Waqar_Academic-Portfolio" project
 3. Go to "Settings" tab
 4. Click "Domains" in the left menu
 5. Type your domain name and click "Add"
@@ -153,10 +149,11 @@ A: Nothing! Vercel's free tier includes:
 YOUR WEBSITE URL
 ------------------------------------------------------------
 After deployment, your website will be at:
-https://academic-portfolio.vercel.app
+https://m-waqar-academic-portfolio.vercel.app
 
 You can share this link with anyone!
 
 ============================================================
   END OF GUIDE
 ============================================================
+</arg_value></tool_call>

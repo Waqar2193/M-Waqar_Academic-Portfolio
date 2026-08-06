@@ -90,7 +90,7 @@ All personal data is centralized in **`src/data/`** — one file per section. Yo
 
 1. Go to **github.com** and sign in
 2. Click the **"+"** icon (top-right corner) → **"New repository"**
-3. Repository name: `academic-portfolio` (or any name you prefer)
+3. Repository name: `M-Waqar_Academic-Portfolio`
 4. Set visibility to **Public** (required for Vercel free tier)
 5. **Do NOT** check "Add a README file" (we already have one)
 6. Click **"Create repository"**
@@ -101,7 +101,7 @@ Open a terminal in your project folder and run:
 
 ```bash
 # Add your GitHub repository as the remote
-git remote add origin https://github.com/YOUR_USERNAME/academic-portfolio.git
+git remote add origin https://github.com/Waqar2193/M-Waqar_Academic-Portfolio.git
 
 # Set the main branch name
 git branch -M main
@@ -110,18 +110,16 @@ git branch -M main
 git push -u origin main
 ```
 
-> **Replace `YOUR_USERNAME`** with your actual GitHub username.
-
 ### Step 3: Deploy on Vercel
 
 1. Go to **vercel.com** and sign in with GitHub (you already did this ✅)
 2. Click **"Add New"** → **"Project"**
 3. You'll see a list of your GitHub repositories
-4. Find `academic-portfolio` → click **"Import"**
+4. Find `M-Waqar_Academic-Portfolio` → click **"Import"**
 5. Vercel **auto-detects Next.js** — no configuration needed
 6. Click **"Deploy"**
 7. Wait ~2-3 minutes for the build to complete
-8. 🎉 Your site is live at `https://academic-portfolio.vercel.app`
+8. 🎉 Your site is live at `https://m-waqar-academic-portfolio.vercel.app`
 
 ### Step 4: Custom Domain (Optional)
 
