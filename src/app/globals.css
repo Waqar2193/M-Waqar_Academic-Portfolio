@@ -289,11 +289,76 @@
   .background-particles,
   .background-connections,
   .background-wave,
-  .background-particle {
+  .background-particle,
+  .background-energy-icon {
     display: none;
   }
 }
 /* ============ End Research-Themed Background ============ */
+
+/* ============ Energy-Themed Animated Icons ============ */
+.background-energy-icon {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+  filter: grayscale(20%) saturate(150%);
+}
+
+.dark .background-energy-icon {
+  opacity: 0.12;
+  filter: grayscale(20%) saturate(150%) brightness(1.2);
+}
+
+.background-wind-turbine .turbine-blades {
+  transform-origin: center;
+  animation: turbineRotate 25s linear infinite;
+}
+
+@keyframes turbineRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.background-solar-panel {
+  animation: solarPulse 6s ease-in-out infinite;
+}
+
+@keyframes solarPulse {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.14; }
+}
+
+.dark .background-solar-panel {
+  animation-duration: 5s;
+}
+
+.background-ev-charging .charging-bolt {
+  animation: chargePulse 3s ease-in-out infinite;
+}
+
+@keyframes chargePulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+.background-grid-station .grid-lines {
+  animation: gridPulse 4s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.25; }
+}
+
+.background-ev-car {
+  animation: evFloat 15s ease-in-out infinite;
+}
+
+@keyframes evFloat {
+  0%, 100% { transform: translateX(0) scale(0.9); }
+  50% { transform: translateX(10px) scale(1); }
+}
+/* ============ End Energy-Themed Icons ============ */
 
 @layer components {
   .container {
