@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-[80vh] flex items-center justify-center pt-20 pb-12 lg:pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-[72vh] flex items-center justify-center pt-16 pb-10 lg:pb-12 overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center px-4">
           <motion.div
@@ -21,12 +21,12 @@ export function Hero() {
               transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
               className="inline-block mb-4"
             >
-              <div className="relative w-32 h-32 lg:w-40 lg:h-40 mx-auto">
+              <div className="relative w-44 h-44 lg:w-56 lg:h-56 mx-auto">
                 <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse" />
                 <div className="absolute inset-2 rounded-full border-4 border-accent/10 animate-pulse" style={{ animationDelay: "0.5s" }} />
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-border bg-surface">
+                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-border bg-surface shadow-lg shadow-accent/10">
                   {profile.photo ? (
-                    <img src={profile.photo} alt={profile.name} className="w-full h-full object-cover" />
+                    <img src={profile.photo} alt={profile.name} className="w-full h-full object-cover hero-profile-img" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-muted">
                       <svg className="w-16 h-16 lg:w-20 lg:h-20 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

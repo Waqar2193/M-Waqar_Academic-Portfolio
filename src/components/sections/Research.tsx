@@ -49,9 +49,9 @@ export function Research() {
           {researchInterests.map((interest) => (
             <article
               key={interest.title}
-              className="group p-6 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
+              className="group p-5 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center mb-5 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+              <div className="w-11 h-11 rounded-xl bg-accent/10 text-accent flex items-center justify-center mb-4 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 {getIcon(interest.icon)}
               </div>
               <h3 className="font-serif text-lg font-medium text-text-primary mb-3 group-hover:text-accent transition-colors">

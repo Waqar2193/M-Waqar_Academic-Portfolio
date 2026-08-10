@@ -9,12 +9,12 @@ export function Publications() {
         <SectionHeading title="Publications" subtitle="Selected research papers" />
 
         <div className="max-w-4xl mx-auto space-y-4">
-          {publications.map((pub, index) => (
+          {publications.map((pub) => (
             <article
               key={pub.id}
-              className="group p-6 lg:p-8 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
+              className="group p-5 lg:p-6 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
             >
-              <div className="flex flex-wrap items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-3 mb-3">
                 <Badge variant={getBadgeVariant(pub.type)}>{pub.type}</Badge>
                 <span className="text-sm text-text-muted font-medium">{pub.venue}</span>
                 <span className="text-sm text-text-muted">{pub.year}</span>

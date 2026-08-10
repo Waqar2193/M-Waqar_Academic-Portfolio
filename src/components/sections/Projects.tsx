@@ -12,7 +12,7 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.id}
-              className="group p-6 lg:p-8 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 flex flex-col"
+              className="group p-5 lg:p-6 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
                 <Badge variant={getStatusVariant(project.status)}>{project.status}</Badge>

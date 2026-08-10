@@ -12,9 +12,9 @@ export function Skills() {
           {skills.map((category) => (
             <article
               key={category.name}
-              className="p-6 lg:p-8 bg-surface border border-border rounded-2xl"
+              className="p-5 lg:p-6 bg-surface border border-border rounded-2xl"
             >
-              <h3 className="font-serif text-lg font-medium text-text-primary mb-6">
+              <h3 className="font-serif text-lg font-medium text-text-primary mb-5">
                 {category.name}
               </h3>
 

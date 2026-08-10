@@ -126,7 +126,7 @@
   position: absolute;
   border-radius: 9999px;
   filter: blur(80px);
-  opacity: 0.7;
+  opacity: 0.4;
   will-change: transform;
 }
 
@@ -296,22 +296,35 @@
 }
 /* ============ End Research-Themed Background ============ */
 
-/* ============ Energy-Themed Animated Icons ============ */
+/* ============ Energy-Themed Animated Icons (visible) ============ */
 .background-energy-icon {
   position: absolute;
-  opacity: 0.08;
   pointer-events: none;
-  filter: grayscale(20%) saturate(150%);
+  color: var(--color-accent);
+  opacity: 0.6;
+  filter: drop-shadow(0 0 7px rgba(13, 148, 136, 0.45)) saturate(170%);
+  will-change: transform, opacity;
 }
 
 .dark .background-energy-icon {
-  opacity: 0.12;
-  filter: grayscale(20%) saturate(150%) brightness(1.2);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5)) saturate(180%) brightness(1.2);
 }
 
+/* Gentle floating motion applied to the repositioned icons */
+.energy-icon-float {
+  animation: energyFloat var(--fd, 8s) ease-in-out infinite alternate;
+}
+
+@keyframes energyFloat {
+  from { transform: translateY(-14px) rotate(-4deg); }
+  to { transform: translateY(14px) rotate(4deg); }
+}
+
+/* Wind turbine — graceful slow spin + gentle mast sway */
 .background-wind-turbine .turbine-blades {
-  transform-origin: center;
-  animation: turbineRotate 25s linear infinite;
+  transform-origin: 25px 25px;
+  animation: turbineRotate 22s linear infinite;
 }
 
 @keyframes turbineRotate {
@@ -319,46 +332,97 @@
   to { transform: rotate(360deg); }
 }
 
+.background-wind-turbine {
+  animation: turbineSway 9s ease-in-out infinite;
+}
+
+@keyframes turbineSway {
+  0%, 100% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2.5deg); }
+}
+
+.background-turbine-farm {
+  animation-duration: 7s;
+}
+
+/* Solar panel — gleaming sunlight */
 .background-solar-panel {
-  animation: solarPulse 6s ease-in-out infinite;
+  animation: solarPulse 5s ease-in-out infinite;
 }
 
 @keyframes solarPulse {
-  0%, 100% { opacity: 0.08; }
-  50% { opacity: 0.14; }
+  0%, 100% { opacity: 0.45; filter: drop-shadow(0 0 8px rgba(13, 148, 136, 0.2)) saturate(140%); }
+  50% { opacity: 0.8; filter: drop-shadow(0 0 18px rgba(13, 148, 136, 0.6)) saturate(170%); }
 }
 
 .dark .background-solar-panel {
-  animation-duration: 5s;
+  animation: solarPulse 4.5s ease-in-out infinite;
 }
 
+/* EV charging station — pulsing charging bolt + floating station */
 .background-ev-charging .charging-bolt {
-  animation: chargePulse 3s ease-in-out infinite;
+  transform-origin: center;
+  animation: chargePulse 2.2s ease-in-out infinite;
 }
 
 @keyframes chargePulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.8; }
+  0%, 100% { opacity: 0.5; transform: scale(0.88); }
+  50% { opacity: 1; transform: scale(1.18); }
 }
 
+.background-ev-charging {
+  animation: evStationFloat 6s ease-in-out infinite;
+}
+
+@keyframes evStationFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Energy grid station — pulsing grid lines */
 .background-grid-station .grid-lines {
-  animation: gridPulse 4s ease-in-out infinite;
+  animation: gridPulse 3.5s ease-in-out infinite;
 }
 
 @keyframes gridPulse {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.25; }
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.55; }
 }
 
+/* EV car — gentle drive floating */
 .background-ev-car {
-  animation: evFloat 15s ease-in-out infinite;
+  animation: evDrive 14s ease-in-out infinite;
 }
 
-@keyframes evFloat {
-  0%, 100% { transform: translateX(0) scale(0.9); }
-  50% { transform: translateX(10px) scale(1); }
+@keyframes evDrive {
+  0%, 100% { transform: translateX(0) translateY(0) scale(0.95); }
+  33% { transform: translateX(14px) translateY(-5px) scale(1); }
+  66% { transform: translateX(-6px) translateY(3px) scale(0.98); }
+}
+
+/* Battery — charging fill pulse */
+.background-battery .battery-fill {
+  animation: batteryPulse 3s ease-in-out infinite;
+}
+
+@keyframes batteryPulse {
+  0%, 55% { opacity: 0.25; }
+  100% { opacity: 0.7; }
 }
 /* ============ End Energy-Themed Icons ============ */
+
+/* ============ Hero Profile Photo Enhancement ============ */
+.hero-profile-img {
+  filter: brightness(1.08) contrast(1.06) saturate(1.12);
+  transform: scale(1.02);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.hero-profile-img:hover {
+  filter: brightness(1.12) contrast(1.05) saturate(1.15);
+  transform: scale(1.04);
+}
+/* ============ End Hero Profile Photo ============ */
 
 @layer components {
   .container {
@@ -366,7 +430,7 @@
   }
 
   .section {
-    @apply py-10 sm:py-12 lg:py-14;
+    @apply py-8 sm:py-10 lg:py-12;
   }
 
   .section-heading {
@@ -375,6 +439,10 @@
 
   .section-subheading {
     @apply text-base sm:text-lg text-text-secondary max-w-2xl;
+  }
+
+  .section-divider {
+    @apply w-12 h-1 rounded-full bg-accent/60 mb-2;
   }
 
   .btn,

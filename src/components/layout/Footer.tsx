@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface/50" role="contentinfo">
-      <div className="container py-12 lg:py-16">
+      <div className="container py-8 lg:py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           <div>
             <h3 className="font-serif text-lg font-medium text-text-primary mb-4">{profile.name}</h3>
