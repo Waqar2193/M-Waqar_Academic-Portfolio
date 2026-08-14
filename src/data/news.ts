@@ -11,6 +11,27 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    id: "news0",
+    date: "2026-08-12",
+    title: "Oral Presentation at 6th BK21 Energy New Industry Research Competition",
+    description:
+      "Presented the research 'Cross-Zone Meta Learning for Intelligent Urban Electric Vehicle Charging Infrastructure Management' at the 6th BK21 Energy New Industry Research Performance Oral Presentation Competition, held at Engineering Building 1, Jeju National University.",
+    type: "talk",
+    featured: true,
+    images: [
+      "/images/presentations/6thNewEnergyIndustryColloquium0.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium1.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium2.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium3.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium4.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium5.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium6.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium7.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium8.jpeg",
+      "/images/presentations/6thNewEnergyIndustryColloquium9.jpeg",
+    ],
+  },
+  {
     id: "news1",
     date: "2026-06-04",
     title: "Oral Presentation at 2026 KIIT Summer Conference",

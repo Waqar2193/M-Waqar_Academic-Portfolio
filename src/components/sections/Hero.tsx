@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { profile } from "@/data/profile";
 import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/Card";
 
 export function Hero() {
   return (
@@ -56,14 +57,18 @@ export function Hero() {
               {profile.title}
             </motion.p>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-              className="text-lg lg:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
+              className="w-full"
             >
-              {profile.shortBio}
-            </motion.p>
+              <Card className="max-w-2xl mx-auto p-6 border-accent/20 hover:border-accent/40 transition-colors text-left">
+                <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+                  {profile.shortBio}
+                </p>
+              </Card>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}

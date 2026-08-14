@@ -83,9 +83,6 @@ export default function RootLayout({
           <div className="background-blob background-blob-2" />
           <div className="background-blob background-blob-3" />
 
-          {/* Time-Series Waveform */}
-          <div className="background-wave" />
-
           {/* Energy-Themed Animated Icons (randomized per refresh) */}
           <EnergyBackgroundIcons />
 

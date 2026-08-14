@@ -10,6 +10,18 @@ export interface Award {
 
 export const awards: Award[] = [
   {
+    id: "award0",
+    title: "Grand Prize, 6th BK21 Energy New Industry Research Competition",
+    organization: "Jeju National University",
+    year: 2026,
+    description: "Awarded the Grand Prize at the 6th BK21 Energy New Industry Research Performance Oral Presentation Competition, Jeju National University, held on August 12, 2026.",
+    category: "academic",
+    certificate: [
+      "/images/certificates/Grand-prize-oral-presentation-certificate.png",
+      "/images/certificates/Grand-prize-oral-presentation.png",
+    ],
+  },
+  {
     id: "award1",
     title: "BK21 FOUR Research Scholarship",
     organization: "Jeju National University",
