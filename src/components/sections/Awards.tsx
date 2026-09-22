@@ -18,10 +18,8 @@ export function Awards() {
           {awards.map((award) => (
             <article
               key={award.id}
-              className={`group p-5 lg:p-6 bg-surface border border-border rounded-2xl transition-colors flex items-start gap-5 ${
-                award.certificate
-                  ? "hover:border-accent/40 cursor-pointer"
-                  : "hover:border-accent/40"
+              className={`group p-5 lg:p-6 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm hover:shadow-md hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300 flex items-start gap-5 ${
+                award.certificate ? "cursor-pointer" : ""
               }`}
               onClick={() => {
                 if (award.certificate) {

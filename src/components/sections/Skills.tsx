@@ -12,27 +12,26 @@ export function Skills() {
           {skills.map((category) => (
             <article
               key={category.name}
-              className="p-5 lg:p-6 bg-surface border border-border rounded-2xl"
+              className="p-5 lg:p-6 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm"
             >
-              <h3 className="font-serif text-lg font-medium text-text-primary mb-5">
+              <h3 className="font-serif text-lg font-semibold tracking-tight text-text-primary mb-5">
                 {category.name}
               </h3>
 
               <div className="space-y-4">
                 {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex items-center justify-between mb-1.5">
-                      <span className="text-sm text-text-secondary font-medium">{skill.name}</span>
-                      <span className="text-xs text-text-muted">{skill.level}/5</span>
-                    </div>
-                    <div className="h-1.5 bg-border rounded-full overflow-hidden">
-                      <div
-                        className={cn(
-                          "h-full rounded-full transition-all duration-500",
-                          "bg-accent"
-                        )}
-                        style={{ width: `${(skill.level / 5) * 100}%` }}
-                      />
+                  <div key={skill.name} className="flex items-center justify-between gap-4">
+                    <span className="text-sm text-text-secondary font-medium">{skill.name}</span>
+                    <div className="flex items-center gap-1.5 flex-shrink-0">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <span
+                          key={i}
+                          className={cn(
+                            "h-2 w-2 rounded-full transition-colors",
+                            i <= skill.level ? "bg-accent" : "bg-border"
+                          )}
+                        />
+                      ))}
                     </div>
                   </div>
                 ))}

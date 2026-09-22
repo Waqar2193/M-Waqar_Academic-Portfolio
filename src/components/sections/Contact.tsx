@@ -61,7 +61,7 @@ export function Contact() {
                 href={link.href}
                 target={link.href.startsWith("mailto:") ? undefined : "_blank"}
                 rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                className="group p-5 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 flex items-center gap-4"
+                className="group p-5 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm hover:border-accent/20 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-4"
               >
                 <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-accent/10 text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors">
                   {getIcon(link.icon)}

@@ -12,7 +12,7 @@ export function Publications() {
           {publications.map((pub) => (
             <article
               key={pub.id}
-              className="group p-5 lg:p-6 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
+              className="group relative p-5 lg:p-6 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm hover:shadow-lg hover:shadow-black/5 hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
             >
               <div className="flex flex-wrap items-center gap-3 mb-3">
                 <Badge variant={getBadgeVariant(pub.type)}>{pub.type}</Badge>
@@ -23,7 +23,7 @@ export function Publications() {
                 )}
               </div>
 
-              <h3 className="font-serif text-xl lg:text-2xl font-medium text-text-primary mb-3 leading-snug group-hover:text-accent transition-colors">
+              <h3 className="font-serif text-xl lg:text-[22px] font-semibold tracking-tight text-text-primary mb-3 leading-snug group-hover:text-accent transition-colors">
                 {pub.title}
               </h3>
 

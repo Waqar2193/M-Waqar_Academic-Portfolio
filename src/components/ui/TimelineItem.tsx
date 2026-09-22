@@ -60,7 +60,7 @@ export function TimelineItem({
         )}
       </div>
 
-      <div className="bg-surface-elevated border border-border rounded-xl p-6">
+      <div className="bg-surface-elevated border border-border rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-border-strong transition-all duration-300">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
           <div>
             <h3 className="font-serif text-lg font-medium text-text-primary">

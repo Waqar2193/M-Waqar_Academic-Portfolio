@@ -5,22 +5,25 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-surface/50" role="contentinfo">
-      <div className="container py-8 lg:py-10">
+    <footer className="border-t border-border bg-surface/40 backdrop-blur-sm" role="contentinfo">
+      <div className="container py-10 lg:py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           <div>
-            <h3 className="font-serif text-lg font-medium text-text-primary mb-4">{profile.name}</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-white text-sm font-bold shadow-sm">MW</span>
+              <h3 className="font-serif text-lg font-semibold tracking-tight text-text-primary">{profile.name}</h3>
+            </div>
             <p className="text-text-secondary text-sm leading-relaxed mb-6 max-w-xs">{profile.shortBio}</p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               {Object.entries(profile.social).map(([key, url]) => (
-                <a key={key} href={url} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label={key}>
+                <a key={key} href={url} target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-surface text-text-secondary hover:text-accent hover:border-accent/30 hover:bg-surface-elevated transition-all duration-200" aria-label={key}>
                   {getSocialIcon(key)}
                 </a>
               ))}
             </div>
           </div>
           <nav aria-label="Quick links">
-            <h4 className="font-medium text-text-primary mb-4">Quick Links</h4>
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-text-muted mb-4">Explore</h4>
             <ul className="space-y-3">
               {[
                 { href: "#about", label: "About Me" },
@@ -42,7 +45,7 @@ export function Footer() {
             </ul>
           </nav>
           <div>
-            <h4 className="font-medium text-text-primary mb-4">Contact</h4>
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-text-muted mb-4">Contact</h4>
             <address className="not-italic text-text-secondary text-sm space-y-3">
               <div>
                 <a href={`mailto:${profile.email}`} className="hover:text-accent transition-colors flex items-center gap-2">

@@ -7,94 +7,84 @@ import { Card } from "@/components/ui/Card";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-[72vh] flex items-center justify-center pt-16 pb-10 lg:pb-12 overflow-hidden">
+    <section id="hero" className="relative min-h-[78vh] flex items-center pt-20 pb-12 lg:pt-24 lg:pb-16 overflow-hidden">
       <div className="container relative z-10">
-        <div className="max-w-3xl mx-auto text-center px-4">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
+          {/* Left — Content */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-4 lg:space-y-6"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="order-2 lg:order-1 text-center lg:text-left"
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-              className="inline-block mb-4"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.5 }}
+              className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-3.5 py-1.5 text-xs font-semibold tracking-widest uppercase text-accent mb-6"
             >
-              <div className="relative w-44 h-44 lg:w-56 lg:h-56 mx-auto">
-                <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse" />
-                <div className="absolute inset-2 rounded-full border-4 border-accent/10 animate-pulse" style={{ animationDelay: "0.5s" }} />
-                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-border bg-surface shadow-lg shadow-accent/10">
-                  {profile.photo ? (
-                    <img src={profile.photo} alt={profile.name} className="w-full h-full object-cover hero-profile-img" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-muted">
-                      <svg className="w-16 h-16 lg:w-20 lg:h-20 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-              </div>
+              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+              Jeju National University • Machine Learning Laboratory
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-              className="font-serif text-4xl lg:text-5xl xl:text-6xl font-medium text-text-primary leading-tight"
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="font-serif text-4xl lg:text-5xl xl:text-[3.25rem] font-semibold tracking-tight text-text-primary leading-[1.05]"
             >
               {profile.name}
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
-              className="text-xl lg:text-2xl text-accent font-medium"
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="mt-3 text-lg lg:text-xl font-medium text-accent"
             >
               {profile.title}
             </motion.p>
+            <p className="mt-1 text-sm text-text-muted">{profile.affiliation}</p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-              className="w-full"
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="mt-6"
             >
-              <Card className="max-w-2xl mx-auto p-6 border-accent/20 hover:border-accent/40 transition-colors text-left">
-                <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+              <div className="rounded-2xl border border-border bg-surface-elevated/70 backdrop-blur-sm p-5 lg:p-6 text-left shadow-sm">
+                <p className="text-[15px] lg:text-base text-text-secondary leading-relaxed">
                   {profile.shortBio}
                 </p>
-              </Card>
+              </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 lg:mt-8"
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="mt-7 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3"
             >
               <a
                 href="#publications"
                 className={cn(
-                  "inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg",
-                  "font-medium text-base transition-all duration-200",
-                  "bg-accent text-white hover:bg-accent/90",
-                  "shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/35",
-                  "focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
+                  "inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl",
+                  "text-sm font-semibold tracking-wide transition-all duration-200",
+                  "bg-accent text-white hover:bg-accent-dark",
+                  "shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-0.5",
+                  "focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
                 )}
               >
                 View Publications
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </a>
               <a
                 href="#contact"
                 className={cn(
-                  "inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg",
-                  "font-medium text-base transition-all duration-200",
-                  "bg-surface border-2 border-border text-text-primary hover:bg-surface/80 hover:border-accent/50",
-                  "focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
+                  "inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl",
+                  "text-sm font-semibold tracking-wide transition-all duration-200",
+                  "bg-surface-elevated border border-border text-text-primary hover:border-accent/30 hover:bg-surface",
+                  "focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
                 )}
               >
                 Contact Me
@@ -102,10 +92,10 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7, duration: 0.6, ease: "easeOut" }}
-              className="flex items-center justify-center gap-4 mt-6 lg:mt-8"
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="mt-8 flex items-center justify-center lg:justify-start gap-3"
             >
               {Object.entries(profile.social).map(([key, url]) => (
                 <a
@@ -114,12 +104,9 @@ export function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
-                    "social-icon w-10 h-10 lg:w-11 lg:h-11 rounded-lg",
-                    "flex items-center justify-center transition-all duration-200",
-                    "bg-surface border border-border text-text-secondary",
-                    "hover:bg-accent hover:border-accent hover:text-white",
-                    "hover:shadow-lg hover:shadow-accent/25",
-                    "focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+                    "flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text-secondary",
+                    "hover:bg-accent hover:border-accent hover:text-white hover:shadow-md hover:shadow-accent/15 hover:-translate-y-0.5",
+                    "transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1"
                   )}
                   aria-label={key.charAt(0).toUpperCase() + key.slice(1)}
                 >
@@ -128,9 +115,60 @@ export function Hero() {
               ))}
             </motion.div>
           </motion.div>
+
+          {/* Right — Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 16 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.25, duration: 0.7, ease: "easeOut" }}
+            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              {/* subtle accent glow */}
+              <div className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl" aria-hidden="true" />
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[360px] lg:h-[360px] rounded-[1.75rem] overflow-hidden border border-border bg-surface shadow-xl shadow-black/5">
+                {profile.photo ? (
+                  <img src={profile.photo} alt={profile.name} className="w-full h-full object-cover hero-profile-img" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-surface">
+                    <svg className="w-20 h-20 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                )}
+                {/* bottom badge */}
+                <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-background/90 backdrop-blur-md border border-border px-3 py-2.5 flex items-center gap-3 shadow-md">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white text-xs font-bold">PhD</span>
+                  <div className="min-w-0">
+                    <p className="text-xs font-semibold text-text-primary leading-none">PhD Scholar</p>
+                    <p className="text-xs text-text-muted truncate">ML Lab, Jeju National Univ.</p>
+                  </div>
+                  <span className="ml-auto h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                </div>
+              </div>
+              {/* floating stat cards — desktop only */}
+              <div className="hidden lg:flex absolute -left-6 top-10 rounded-xl border border-border bg-surface-elevated px-3.5 py-2.5 shadow-lg items-center gap-2.5">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                </span>
+                <div>
+                  <p className="text-sm font-bold leading-none text-text-primary">10</p>
+                  <p className="text-xs text-text-muted leading-none mt-1">Publications</p>
+                </div>
+              </div>
+              <div className="hidden lg:flex absolute -right-4 bottom-16 rounded-xl border border-border bg-surface-elevated px-3.5 py-2.5 shadow-lg items-center gap-2.5">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z" /></svg>
+                </span>
+                <div>
+                  <p className="text-sm font-bold leading-none text-text-primary">Best Paper</p>
+                  <p className="text-xs text-text-muted leading-none mt-1">ADINTECH 2025</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
-
     </section>
   );
 }

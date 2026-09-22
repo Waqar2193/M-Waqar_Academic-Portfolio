@@ -20,8 +20,8 @@ export function News() {
           {sortedNews.map((item) => (
             <article
               key={item.id}
-              className={`group p-5 lg:p-6 bg-surface border border-border rounded-2xl transition-colors ${
-                item.images ? "hover:border-accent/40 cursor-pointer" : "hover:border-accent/40"
+              className={`group p-5 lg:p-6 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm hover:shadow-md hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300 ${
+                item.images ? "cursor-pointer" : ""
               }`}
               onClick={() => {
                 if (item.images) {

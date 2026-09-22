@@ -70,8 +70,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm"
-          : "bg-transparent"
+          ? "bg-background/80 backdrop-blur-xl border-b border-border/60 shadow-sm supports-[backdrop-filter]:bg-background/70"
+          : "bg-transparent border-b border-transparent"
       )}
       role="navigation"
       aria-label="Main navigation"
@@ -80,13 +80,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link
             href="#hero"
-            className="font-serif text-xl font-medium text-text-primary hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
+            className="group flex items-center gap-2.5 font-serif text-xl font-semibold tracking-tight text-text-primary hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
             aria-label="Go to home"
           >
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white text-sm font-bold shadow-sm shadow-accent/20 group-hover:bg-accent-dark transition-colors">MW</span>
             M. Waqar
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -96,11 +97,11 @@ export function Navbar() {
                   handleNavClick(item.href);
                 }}
                 className={cn(
-                  "text-sm font-medium transition-colors relative py-2",
+                  "text-[13px] font-semibold tracking-wide transition-colors relative py-2 uppercase",
                   "hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded",
                   activeSection === item.href.slice(1)
                     ? "text-accent"
-                    : "text-text-secondary"
+                    : "text-text-secondary/90"
                 )}
                 aria-current={activeSection === item.href.slice(1) ? "page" : undefined}
               >
@@ -108,13 +109,15 @@ export function Navbar() {
                 {activeSection === item.href.slice(1) && (
                   <motion.div
                     layoutId="underline"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
+                    className="absolute -bottom-0.5 left-0 right-0 h-0.5 bg-accent rounded-full"
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                   />
                 )}
               </Link>
             ))}
-            <ThemeToggle />
+            <div className="ml-2 pl-6 border-l border-border">
+              <ThemeToggle />
+            </div>
           </div>
 
           <div className="flex items-center gap-4 lg:hidden">

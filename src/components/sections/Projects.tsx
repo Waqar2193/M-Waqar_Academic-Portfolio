@@ -12,7 +12,7 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.id}
-              className="group p-5 lg:p-6 bg-surface border border-border rounded-2xl hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 flex flex-col"
+              className="group p-5 lg:p-6 bg-surface-elevated border border-border/60 rounded-2xl shadow-sm hover:shadow-lg hover:shadow-black/5 hover:border-accent/20 hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
                 <Badge variant={getStatusVariant(project.status)}>{project.status}</Badge>
@@ -37,7 +37,7 @@ export function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-full bg-surface border border-border text-text-secondary"
+                    className="inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-full bg-surface border border-border/60 text-text-secondary"
                   >
                     {tag}
                   </span>

@@ -25,12 +25,19 @@ export function SectionHeading({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={cn("mb-6", textAlign, className)}
+      className={cn("mb-10", textAlign, className)}
     >
       <h2 className={cn("section-heading", mxAuto)}>{title}</h2>
-      {align === "left" && <div className="section-divider mt-2" aria-hidden="true" />}
+      {align === "left" ? (
+        <div className="flex items-center gap-3 mt-3">
+          <div className="section-divider !mb-0" aria-hidden="true" />
+          <div className="h-px w-12 bg-border" aria-hidden="true" />
+        </div>
+      ) : (
+        <div className="section-divider mx-auto mt-3" aria-hidden="true" />
+      )}
       {subtitle && (
-        <p className={cn("section-subheading mt-2", mxAuto)}>{subtitle}</p>
+        <p className={cn("section-subheading mt-3", mxAuto)}>{subtitle}</p>
       )}
     </motion.div>
   );
