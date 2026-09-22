@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { EnergyBackgroundIcons } from "@/components/background/EnergyBackgroundIcons";
+import { BackToTop } from "@/components/ui/BackToTop";
 import "./globals.css";
 
 const inter = Inter({
@@ -95,10 +96,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex-grow relative z-10" id="main">
-            {children}
-          </main>
-          <Footer />
+           <main className="flex-grow relative z-10" id="main">
+             {children}
+           </main>
+           <Footer />
+           <BackToTop />
         </ThemeProvider>
       </body>
     </html>
