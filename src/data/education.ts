@@ -69,9 +69,8 @@ export const experience: ExperienceEntry[] = [
     startDate: "2025-03",
     endDate: "Present",
     description: [
-      "Conduct research on probabilistic time-series forecasting, energy informatics, electric vehicle charging systems, and meta-learning",
-      "Develop AI models published in leading journals including Applied Energy and Information Sciences",
-      "Recipient of the BK21 FOUR Research Scholarship",
+      "Research on probabilistic and cross-zone forecasting for EV charging infrastructure and energy systems",
+      "Collaboration on reproducible experiments and grid-aware evaluation",
     ],
     type: "academic",
   },

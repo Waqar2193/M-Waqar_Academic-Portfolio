@@ -3,12 +3,12 @@ export const profile = {
   title: "PhD Scholar in Electronics Engineering",
   affiliation: "Machine Learning Laboratory, Jeju National University, Republic of Korea",
   email: "m-waqar@stu.jejunu.ac.kr",
-  shortBio: "I am a PhD scholar at the Machine Learning Laboratory, Jeju National University, specializing in machine learning, time-series forecasting, probabilistic forecasting, meta-learning, energy informatics, and large language models (LLMs). My research focuses on developing advanced AI models for electric vehicle charging systems and energy forecasting, with publications in leading journals including Sustainable Cities and Society, Applied Energy, and Information Sciences.",
-  longBio: `I am a PhD scholar in Electronics Engineering at Jeju National University, Republic of Korea, working under the supervision of Prof. Yung-Cheol Byun at the Machine Learning Laboratory. My research focuses on probabilistic time-series forecasting, energy informatics, electric vehicle charging systems, and meta-learning. I develop AI models that have been published in leading journals including Sustainable Cities and Society, Applied Energy, Information Sciences, Journal of Energy Storage, IEEE Access, and Energy Reports.
+  shortBio: "PhD scholar at the Machine Learning Laboratory, Jeju National University, building probabilistic and meta-learning models for electric vehicle charging infrastructure and sustainable energy systems.",
+  longBio: `I am a PhD scholar in Electronics Engineering at Jeju National University, working under Prof. Yung-Cheol Byun at the Machine Learning Laboratory. My work centers on probabilistic time-series forecasting, energy informatics, and meta-learning for EV charging infrastructure.
 
-Prior to my PhD, I completed my M.S. in Computer Science at COMSATS University Islamabad, Pakistan, with a CGPA of 3.71/4.00, and my B.S. (Honors) in Computer Science at the University of Sargodha, Pakistan, with a CGPA of 3.50/4.00. I worked as a Lecturer in Computer Science at Bahria Foundation College, Attock, Pakistan, where I taught Introduction to ICT, Programming Fundamentals, and Data Science Foundations.
+I develop AI models published in Sustainable Cities and Society, Applied Energy, Information Sciences, Journal of Energy Storage, IEEE Access, and Energy Reports.
 
-My research has been recognized with the BK21 FOUR Research Scholarship, the Best Paper Award at ADINTECH 2025, and the Excellent Research Performance Award from BK21 at Jeju National University. I am passionate about advancing energy-efficient AI systems and contributing to sustainable energy solutions.`,
+Previously, I completed an M.S. in Computer Science at COMSATS University Islamabad (CGPA 3.71/4.00) and a B.S. (Honors) at the University of Sargodha (CGPA 3.50/4.00), then served seven years as Lecturer in Computer Science at Bahria Foundation College, Attock, teaching programming and data science and designing lab curricula. I am passionate about energy-efficient AI for sustainable cities.`,
   photo: "/images/profile.png",
   cvUrl: "/files/cv.pdf",
   office: "Machine Learning Laboratory, Jeju National University",

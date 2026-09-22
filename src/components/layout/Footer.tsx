@@ -13,7 +13,7 @@ export function Footer() {
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-white text-sm font-bold shadow-sm">MW</span>
               <h3 className="font-serif text-lg font-semibold tracking-tight text-text-primary">{profile.name}</h3>
             </div>
-            <p className="text-text-secondary text-sm leading-relaxed mb-6 max-w-xs">{profile.shortBio}</p>
+            <p className="text-text-secondary text-sm leading-relaxed mb-6 max-w-xs">PhD scholar in Electronics Engineering at Jeju National University, focused on EV charging and sustainable energy AI.</p>
             <div className="flex items-center gap-3">
               {Object.entries(profile.social).map(([key, url]) => (
                 <a key={key} href={url} target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-surface text-text-secondary hover:text-accent hover:border-accent/30 hover:bg-surface-elevated transition-all duration-200" aria-label={key}>

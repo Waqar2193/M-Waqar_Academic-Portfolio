@@ -11,18 +11,6 @@ export interface Skill {
 
 export const skills: SkillCategory[] = [
   {
-    name: "Research Areas",
-    skills: [
-      { name: "Machine Learning", level: 5 },
-      { name: "Deep Learning", level: 5 },
-      { name: "Time Series Forecasting", level: 5 },
-      { name: "Probabilistic Forecasting", level: 5 },
-      { name: "Meta-learning", level: 4 },
-      { name: "Transfer Learning", level: 4 },
-      { name: "Natural Language Processing", level: 4 },
-    ],
-  },
-  {
     name: "Frameworks",
     skills: [
       { name: "PyTorch", level: 5 },
