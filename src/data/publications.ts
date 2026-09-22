@@ -15,6 +15,18 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    id: "pub0",
+    title: "MTML-EV: Multi-target meta-learning for cross-zone urban electric vehicle charging infrastructure management",
+    authors: ["M. Waqar", "Y.-W. Kim", "Y.-C. Byun"],
+    venue: "Sustainable Cities and Society",
+    year: 2026,
+    type: "journal",
+    doi: "10.1016/j.scs.2026.107865",
+    url: "https://doi.org/10.1016/j.scs.2026.107865",
+    abstract: "We propose MTML-EV, a multi-target meta-learning framework for cross-zone urban electric vehicle charging infrastructure management, enabling effective knowledge transfer across diverse urban zones for simultaneous prediction of multiple charging-related targets in sustainable city environments.",
+    featured: true,
+  },
+  {
     id: "pub1",
     title: "A hybrid deep learning framework for multivariate energy forecasting and peak load prediction in electric vehicle charging infrastructure",
     authors: ["M. Waqar", "Y.-W. Kim", "Y.-C. Byun"],

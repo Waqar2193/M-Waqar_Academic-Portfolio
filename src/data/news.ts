@@ -11,6 +11,15 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    id: "news_new",
+    date: "2026-09-04",
+    title: "Paper published in Sustainable Cities and Society",
+    description: "Our paper 'MTML-EV: Multi-target meta-learning for cross-zone urban electric vehicle charging infrastructure management' has been published in Sustainable Cities and Society (vol. 150, p. 107865).",
+    url: "https://doi.org/10.1016/j.scs.2026.107865",
+    type: "publication",
+    featured: true,
+  },
+  {
     id: "news0",
     date: "2026-08-12",
     title: "Oral Presentation at 6th BK21 Energy New Industry Research Competition",
