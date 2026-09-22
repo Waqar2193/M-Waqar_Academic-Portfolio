@@ -124,8 +124,6 @@ export function Hero() {
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* subtle accent glow */}
-              <div className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl" aria-hidden="true" />
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[360px] lg:h-[360px] rounded-[1.75rem] overflow-hidden border border-border bg-surface shadow-xl shadow-black/5">
                 {profile.photo ? (
                   <img src={profile.photo} alt={profile.name} className="w-full h-full object-cover hero-profile-img" />
@@ -136,34 +134,6 @@ export function Hero() {
                     </svg>
                   </div>
                 )}
-                {/* bottom badge */}
-                <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-background/90 backdrop-blur-md border border-border px-3 py-2.5 flex items-center gap-3 shadow-md">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white text-xs font-bold">PhD</span>
-                  <div className="min-w-0">
-                    <p className="text-xs font-semibold text-text-primary leading-none">PhD Scholar</p>
-                    <p className="text-xs text-text-muted truncate">ML Lab, Jeju National Univ.</p>
-                  </div>
-                  <span className="ml-auto h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                </div>
-              </div>
-              {/* floating stat cards — desktop only */}
-              <div className="hidden lg:flex absolute -left-6 top-10 rounded-xl border border-border bg-surface-elevated px-3.5 py-2.5 shadow-lg items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-                </span>
-                <div>
-                  <p className="text-sm font-bold leading-none text-text-primary">10</p>
-                  <p className="text-xs text-text-muted leading-none mt-1">Publications</p>
-                </div>
-              </div>
-              <div className="hidden lg:flex absolute -right-4 bottom-16 rounded-xl border border-border bg-surface-elevated px-3.5 py-2.5 shadow-lg items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z" /></svg>
-                </span>
-                <div>
-                  <p className="text-sm font-bold leading-none text-text-primary">Best Paper</p>
-                  <p className="text-xs text-text-muted leading-none mt-1">ADINTECH 2025</p>
-                </div>
               </div>
             </div>
           </motion.div>

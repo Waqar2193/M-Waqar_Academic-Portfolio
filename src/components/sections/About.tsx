@@ -21,7 +21,7 @@ export function About() {
             <div className="rounded-2xl border border-border/60 bg-surface-elevated p-6 shadow-sm">
               <h3 className="font-serif text-lg font-semibold tracking-tight text-text-primary mb-2">Research Impact</h3>
               <p className="text-text-secondary text-sm leading-relaxed">
-                Published in leading journals including Applied Energy, Information Sciences, Journal of Energy Storage, IEEE Access, and Energy Reports. Recipient of the BK21 FOUR Research Scholarship and Best Paper Award at ADINTECH 2025.
+                Published in leading journals including Sustainable Cities and Society, Applied Energy, Information Sciences, Journal of Energy Storage, IEEE Access, and Energy Reports. Recipient of the BK21 FOUR Research Scholarship and Best Paper Award at ADINTECH 2025.
               </p>
             </div>
           </div>
