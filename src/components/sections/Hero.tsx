@@ -44,7 +44,6 @@ export function Hero() {
             >
               {profile.title}
             </motion.p>
-            <p className="mt-1 text-sm text-text-muted">{profile.affiliation}</p>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -95,24 +94,39 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="mt-8 flex items-center justify-center lg:justify-start gap-3"
+              className="mt-8 flex items-center justify-center lg:justify-start gap-4"
             >
-              {Object.entries(profile.social).map(([key, url]) => (
-                <a
-                  key={key}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    "flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text-secondary",
-                    "hover:bg-accent hover:border-accent hover:text-white hover:shadow-md hover:shadow-accent/15 hover:-translate-y-0.5",
-                    "transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1"
-                  )}
-                  aria-label={key.charAt(0).toUpperCase() + key.slice(1)}
-                >
-                  {getSocialIcon(key)}
-                </a>
-              ))}
+              {Object.entries(profile.social).map(([key, url]) => {
+                const labelMap: Record<string, string> = {
+                  linkedin: "LinkedIn",
+                  github: "GitHub",
+                  googleScholar: "Google Scholar",
+                  orcid: "ORCID",
+                  researchgate: "ResearchGate",
+                };
+                const label = labelMap[key] ?? key;
+                return (
+                  <div key={key} className="relative group">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(
+                        "flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text-secondary",
+                        "hover:bg-accent hover:border-accent hover:text-white hover:shadow-md hover:shadow-accent/15 hover:-translate-y-0.5",
+                        "transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1"
+                      )}
+                      aria-label={label}
+                    >
+                      {getSocialIcon(key)}
+                    </a>
+                    <span className="pointer-events-none absolute left-1/2 -top-9 -translate-x-1/2 whitespace-nowrap rounded-md bg-text-primary px-2.5 py-1 text-xs font-medium text-white opacity-0 shadow-md transition-all duration-200 group-hover:opacity-100 group-hover:-translate-y-0.5 group-focus-within:opacity-100">
+                      {label}
+                      <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-text-primary" />
+                    </span>
+                  </div>
+                );
+              })}
             </motion.div>
           </motion.div>
 
